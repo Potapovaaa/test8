@@ -1,0 +1,35 @@
+﻿
+
+namespace скоропечатание
+{
+    public static class fail
+    {
+        static void tablica()
+        {
+            users_names();
+            result_min();
+            result_sec();
+        }
+
+        private static void result_sec()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void result_min()
+        {
+            throw new NotImplementedException();
+        }
+
+        static public void users_names()
+        {
+            Console.WriteLine("Введите свое имя");
+            string name = Console.ReadLine();
+            result_min();
+            result_sec();
+            File.AppendAllText("\"C:\\Users\\Admin\\OneDrive\\Рабочий стол\\таблица.txt\"", name);
+        }
+
+       
+    }
+}
